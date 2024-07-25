@@ -1,5 +1,5 @@
 # OpenDocs
-I’ll be documenting the [Django Todo List](https://github.com/bradtraversy/django-todolist) repository for this task. 
+This repository serves as an example for Task-07. The repository used for this example is the [Django Todo List](https://github.com/bradtraversy/django-todolist) application.
 
 ## Django Todo List
 
