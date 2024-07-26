@@ -1,30 +1,48 @@
 # Directory Structure of Django Todo List
 
-## Overview
-This document provides a detailed look at the directory structure of the Django Todo List project.
-
-### Root Directory
-- **`manage.py`**: A command-line utility for managing the Django project.
-
-### `django_todolist/`
-- **`__init__.py`**: Marks this directory as a Python package.
-- **`models.py`**: Defines the `Task` model with fields for the task's title, description, and completion status.
-- **`views.py`**: Contains views for handling tasks, including listing, creating, updating, and deleting tasks.
-- **`urls.py`**: Maps URL patterns to views for routing requests.
-- **`forms.py`**: Includes forms for creating and updating tasks.
-
-### `templates/`
-- **`base.html`**: Base template for the application, providing a common layout for other templates.
-- **`task_list.html`**: Template for displaying the list of tasks.
-- **`task_form.html`**: Template for creating and editing tasks.
-
-### `static/`
-- **`styles.css`**: Contains CSS styles used throughout the application.
-
-### `migrations/`
-- **Migration Files**: Manage database schema changes for the `Task` model.
-
-### `requirements.txt`
-Lists the Python packages required for the project.
-
-
+```
+.
+├── db.sqlite3
+├── manage.py
+├── README.md
+├── todolist
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── settings.py
+│   ├── settings.pyc
+│   ├── urls.py
+│   ├── urls.pyc
+│   ├── wsgi.py
+│   └── wsgi.pyc
+└── todos
+    ├── admin.py
+    ├── admin.pyc
+    ├── apps.py
+    ├── apps.pyc
+    ├── __init__.py
+    ├── __init__.pyc
+    ├── migrations
+    │   ├── 0001_initial.py
+    │   ├── 0001_initial.pyc
+    │   ├── __init__.py
+    │   └── __init__.pyc
+    ├── models.py
+    ├── models.pyc
+    ├── static
+    │   └── css
+    │       └── style.css
+    ├── templates
+    │   ├── add.html
+    │   ├── admin
+    │   │   └── base_site.html
+    │   ├── details.html
+    │   ├── index.html
+    │   └── partials
+    │       ├── footer.html
+    │       └── header.html
+    ├── tests.py
+    ├── urls.py
+    ├── urls.pyc
+    ├── views.py
+    └── views.pyc
+```
